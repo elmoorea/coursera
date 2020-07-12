@@ -13,18 +13,19 @@
 	</head>
 	<body>
 		<div ng-controller='LunchCheckController' class="container">	
-		<h1>Lunch Checker</h1>
-		<div class="form-group">
-			<input id="lunch-menu" type="text"
-			placeholder="list comma separated dishes you usually have for lunch"
-			class="form-control"
-			ng-model="dishes">
-		</div>
-		<div class="form-group">
-			<button ng-click="checkTooMuch();" class="btn btn-default">Check If Too Much</button>
-		</div>
-		<div class="form-group message">
-			{{stateOfBeing}}
+			<h1>Lunch Checker</h1>
+				<div class="form-group">
+					<input id="lunch-menu" type="text"
+					placeholder="list comma separated dishes you usually have for lunch"
+					class="form-control"
+					ng-model="dishes">
+				</div>
+			<div class="form-group">
+				<button ng-click="checkTooMuch();" class="btn btn-default">Check If Too Much</button>
+			</div>
+			<div class="form-group message">
+				{{stateOfBeing}}
+			</div>
 		</div>
 	</body>
 </html>
