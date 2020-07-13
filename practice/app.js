@@ -3,14 +3,14 @@
 
 //int d = 0;
 
-angular.module('MsgApp', [])
-.controller('MsgController', MsgController);
+angular.module('LunchCheckApp', [])
+.controller('LunchCheckController', MsgController);
 
 MsgController.$inject = ['$scope'];
 function MsgController($scope) {
   $scope.name = "Yaakev";
   $scope.dishes = "";
-  $scope.stateOfBeing = "Hungry";
+  $scope.stateOfBeing = "Hungry - No Dishes Eaten";
 
   $scope.checkTooMuch = function () {
     $scope.stateOfBeing = "fed";
